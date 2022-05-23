@@ -1,0 +1,194 @@
+// .app__logo img{
+//     height: 179px; 
+//     margin:12px 23px 10px 10px;
+//     border-radius: 123px;
+// }
+
+.app__navbar{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 1rem 2rem;
+    background: rgba(204, 204, 210, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(233, 136, 136, 0.18);
+    position: fixed;
+    z-index: 2;
+}
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    img{
+        width: auto;
+        height: 9rem;
+        border-radius: 20% 30% 120% 45%;
+
+        @media screen and(max-width:2000px) {
+            width: auto;
+            height: 90px;
+        }
+    }
+}
+
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    list-style:none;
+
+    li{
+        margin:0 1.5rem ;
+        cursor: pointer;
+
+        flex-direction: column;
+
+        div{
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border-radius: 50% 20%;
+
+            margin-bottom: 5px;
+
+        }
+
+        a{
+            color: var(--gray-color);
+            text-decoration: none;
+            flex-direction: column;
+
+            text-transform: uppercase;
+            font-weight: 900;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                color: var(--secondary-color);
+            }
+        }
+        &:hover{
+            div{
+            background-color: var(--secondary-color);
+        }
+    }
+
+    }
+    @media screen and(max-width:900px) {
+        display: none;
+        
+    }
+    
+}
+
+.app__navbar-menu{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    
+   
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+
+    svg{
+        width: 70%;
+        height: 90%;
+        color: var(--white-color);
+
+    }
+
+    div{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
+        padding: 1rem;
+
+        width: 80%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        
+        background-color: var(--white-color);
+        background-repeat: no-repeat;
+       box-shadow: 0 0 20px rgba(71, 69, 69, 0.12);
+       svg{
+        width: 5%;
+        height: 5%;
+        color: var(--secondary-color);
+        margin: 0.5rem 1rem;
+        display: flex;
+
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+       
+        align-items: flex-start;
+        flex-direction: column;
+        background: url(../../assets/KUWARP.gif);
+   background-repeat: no-repeat;     
+   background-position: 120px 45px;   
+   background-size: cover;
+  
+    
+    
+    li{
+        
+        margin: 1rem;
+
+        a{
+            color: var(--gray-color);
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            cursor: pointer;
+
+            transition: all 0.4s ease-in-out;
+
+            &:hover{
+                font-weight: bold;
+                color:rgb(17, 95, 95);
+            }
+            
+        }
+
+    }
+}
+
+    @media screen and (min-width:900px) {
+  display: none; 
+  
+  
+    }
+
+    }
+    @media screen and (min-width:900px) {
+        display: none;        
+          }
+}
