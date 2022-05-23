@@ -35,7 +35,7 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 40 }}><a href={about.link} target='_blank'>{about.title}</a></h2>
+            <h2 className="bold-text" style={{ marginTop: 40 }}><a href={about.link} rel='noreferrer' target='blank'>{about.title}</a></h2>
             <p className="p-text" style={{ marginTop: 20 }}>{about.description}</p>
           </motion.div>
         ))}

@@ -11,7 +11,7 @@ function App() {
     <Footer/>
     <Skills/>
     <Testimonial/>
-    {/* <Work/> */}
+    <Work/>
    </div>
   )
 }

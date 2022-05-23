@@ -37,7 +37,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import waving from '../assets/waving-wave.gif';
 
-export default {
+module.export  ={
   email,
   mobile,
   api,
