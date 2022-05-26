@@ -1,3 +1,3 @@
-import images from './Images';
+import Images from './Images';
 
-export default images ;
+export default Images ;

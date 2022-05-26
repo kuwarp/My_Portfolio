@@ -36,8 +36,11 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import waving from '../assets/waving-wave.gif';
+import Images from '.';
+// import Images from '.';
+// import images from '.';
 
-module.export  ={
+ module.exports   ={
   email,
   mobile,
   api,
@@ -74,3 +77,5 @@ module.export  ={
   waving,
   profil,
 };
+
+export default Images
